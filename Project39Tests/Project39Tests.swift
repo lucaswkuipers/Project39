@@ -19,6 +19,23 @@ class Project39Tests: XCTestCase {
     }
 	func testAllWordsLoaded() {
 		let playData = PlayData()
-		XCTAssertEqual(playData.allWords.count, 384001, "allWords count was not equal to 384001")
+		XCTAssertEqual(playData.allWords.count, 18440, "allWords count was not equal to 18440")
 	}
+	
+	func testWordCountsAreCorrect() {
+		let playData = PlayData()
+		XCTAssertEqual(playData.wordCounts["entering"], 4, "entering does not appear 4 times")
+		XCTAssertEqual(playData.wordCounts["pense"], 1, "pense does not appear 1 time")
+		XCTAssertEqual(playData.wordCounts["Gentleman"], 115, "Gentleman does not appear 115 times")
+		XCTAssertEqual(playData.wordCounts["Shylock"], 19, "Shylock does not appear 19 times")
+		XCTAssertEqual(playData.wordCounts["Are"], 133, "Are does not appear 133 times")
+		XCTAssertEqual(playData.wordCounts["NESTOR"], 50, "NESTOR does not appear 50 times")
+
+	}
+	
+	func testViewController() {
+		let vc = ViewController()
+		vc.viewDidLoad()
+	}
+	
 }
