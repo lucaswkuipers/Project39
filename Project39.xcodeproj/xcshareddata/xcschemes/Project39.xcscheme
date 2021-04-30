@@ -37,6 +37,13 @@
             BlueprintName = "Project39"
             ReferencedContainer = "container:Project39.xcodeproj">
          </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9D060CE726386D9A009C17EE"
+            BuildableName = "Project39Tests.xctest"
+            BlueprintName = "Project39Tests"
+            ReferencedContainer = "container:Project39.xcodeproj">
+         </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
          <TestableReference
